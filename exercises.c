@@ -107,6 +107,7 @@ int checkSorted(int arr[], int size) {
     else if(temp >= arr[i]){
       temp = arr[i];
       contDescendente++;
+    }
   }
   if(contAscendente == size) return 1; 
   else if(contDescendente == size) return -1;
@@ -138,7 +139,7 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
   strcpy(libro->autor.nombre, nombreAutor);
   libro->autor.anioNacimiento = anioNacimiento;
   libro->anioPublicacion = anioPublicacion;
-                      }
+}
 
 /*
 Ejercicio 7: Lista enlazada de números
@@ -155,25 +156,6 @@ typedef struct nodo {
   int numero;
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
-
-  Nodo *crearListaEnlazada(int arr[], int size) {
-    Nodo *cabeza = NULL;
-    Nodo *temp = NULL;
-    Nodo *actual = NULL;
-
-    for(int i = 0 ; i < size ; i++) {
-      Nodo *newNode = (Nodo *)malloc(sizeof(Nodo));
-      newNode->numero = arr[i];
-      newNode->siguiente = NULL;
-
-      if(cabeza == NULL) {
-        cabeza = newNode;
-        actual = newNode;
-      } else {
-        actual->siguiente = newNode;
-        actual = newNode;
-      }
-    }
-
-    return cabeza;
-  }
+Nodo *crearListaEnlazada(int arr[], int size) {
+  return NULL;
+}
