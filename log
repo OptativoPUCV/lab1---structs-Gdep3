@@ -269,3 +269,17 @@ Fri 15 Mar 2024 07:44:57 PM UTC:
  tests:  0|1
 total_score: 60/70
 64a8236
+Fri 15 Mar 2024 07:59:30 PM UTC: 
+ exercises.c | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:169:10: error: function may return address of local variable [-Werror=return-local-addr]
+  169 |   return head;
+      |          ^~~~
+exercises.c:158:8: note: declared here
+  158 |   Nodo arrNodos[size];
+      |        ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ada0986
