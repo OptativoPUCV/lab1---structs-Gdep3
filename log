@@ -429,3 +429,14 @@ exercises.c:156:39: error: variable ‘actual’ set but not used [-Werror=unuse
 cc1: all warnings being treated as errors
 Compilation failed
 c63fc1b
+Fri 15 Mar 2024 09:31:02 PM UTC: 
+ exercises.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:157:9: error: variable ‘ultimo’ set but not used [-Werror=unused-but-set-variable]
+  157 |   Nodo *ultimo = NULL;
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3ecf047
