@@ -440,3 +440,14 @@ exercises.c:157:9: error: variable ‘ultimo’ set but not used [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 3ecf047
+Fri 15 Mar 2024 09:36:15 PM UTC: 
+ exercises.c | 17 ++++++++---------
+ 1 file changed, 8 insertions(+), 9 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:168:1: error: control reaches end of non-void function [-Werror=return-type]
+  168 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+3552e1b
