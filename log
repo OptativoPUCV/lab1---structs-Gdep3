@@ -403,3 +403,18 @@ exercises.c:111:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 ccf1dca
+Fri 15 Mar 2024 09:26:42 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:157:39: error: variable ‘actual’ set but not used [-Werror=unused-but-set-variable]
+  157 |   Nodo *cabeza = NULL, *temp = NULL, *actual = NULL;
+      |                                       ^~~~~~
+exercises.c: In function ‘checkSorted’:
+exercises.c:111:1: error: control reaches end of non-void function [-Werror=return-type]
+  111 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+901e249
