@@ -359,3 +359,26 @@ Fri 15 Mar 2024 08:44:08 PM UTC:
  tests:  0|2
 total_score: 50/70
 d5fd7a2
+Fri 15 Mar 2024 08:44:44 PM UTC: 
+ exercises.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c:110:3: error: expected identifier or ‘(’ before ‘if’
+  110 |   if(contAscendente == size) return 1;
+      |   ^~
+exercises.c:111:3: error: expected identifier or ‘(’ before ‘else’
+  111 |   else if(contDescendente == size) return -1;
+      |   ^~~~
+exercises.c:112:3: error: expected identifier or ‘(’ before ‘else’
+  112 |   else return 0;
+      |   ^~~~
+exercises.c:113:1: error: expected identifier or ‘(’ before ‘}’ token
+  113 | }
+      | ^
+exercises.c: In function ‘checkSorted’:
+exercises.c:109:3: error: control reaches end of non-void function [-Werror=return-type]
+  109 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+19bda24
