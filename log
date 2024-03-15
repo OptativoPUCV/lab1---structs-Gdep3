@@ -294,3 +294,9 @@ exercises.c:159:9: error: variable ‘ultimo’ set but not used [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 fea5da3
+Fri 15 Mar 2024 08:24:21 PM UTC: 
+ exercises.c | 16 ++++++++--------
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+ tests:  0|2
+total_score: 50/70
+b358b18
