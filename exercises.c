@@ -64,10 +64,30 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void ordenarArr(int newArr[], int size){
+  int temp = 0;
+  for(int i = 0 ; i < size ; i++){
+    for(int j = 0 ; j < size ; j++){
+      if(newArr[i] < newArr[j]){
+        temp = newArr[i];
+        newArr[i] = newArr[j];
+        newArr[j] = temp;
+      }
+    }
+  }
 }
 
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) {
+  int cont = 0;
+  for (int i = 0; i < size1; i++){
+    result[cont] = arr1[i];
+    cont++;
+  }
+  for (int i = 0; i < size2; i++){
+    result[cont] = arr2[i];
+    cont++;
+  }
+  ordenarArr(result, size1 + size2);
 }
 
 /*
