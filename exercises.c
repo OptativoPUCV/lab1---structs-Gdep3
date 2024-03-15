@@ -77,14 +77,6 @@ void ordenarArr(int newArr[], int size){
 
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) {
-  int *newArr[size1 + size2];
-  for(int i = 0 ; i < size1 ; i++){
-    newArr[i] = arr1[i];
-  }
-  for(int k = size1 ; k < size1 + size2 ; k++){
-    newArr[k] = arr2[k];
-  }
-  ordenarArr(newArr, size1 + size2);
 }
 
 /*
