@@ -54,7 +54,7 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
-int ordenarArr(int newArr[], int size){
+void ordenarArr(int newArr[], int size){
   int temp = 0;
   for(int i = 0 ; i < size ; i++){
     for(int j = 0 ; j < size ; j++){
