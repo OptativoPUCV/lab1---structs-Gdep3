@@ -106,8 +106,7 @@ int checkSorted(int arr[], int size) {
     } else if(temp > arr[i]) {
       temp = arr[i];
       contDescendente++;
-    }
-    else iguales++;
+    } else if(temp == arr[i]) iguales++;
   }
   if(contAscendente + iguales == size) return 1;
   else if(contDescendente + iguales == size) return -1;
